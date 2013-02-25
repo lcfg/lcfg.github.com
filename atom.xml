@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://lcfg.github.com/atom.xml" rel="self"/>
   <link href="http://lcfg.github.com/"/>
-  <updated>2013-02-26T00:43:38+01:00</updated>
+  <updated>2013-02-26T00:45:44+01:00</updated>
   <id>http://lcfg.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,28 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[test]]></title>
-    <link href="http://lcfg.github.com/blog/2013/02/26/test/"/>
-    <updated>2013-02-26T00:38:00+01:00</updated>
-    <id>http://lcfg.github.com/blog/2013/02/26/test</id>
-    <content type="html"><![CDATA[<h1>title</h1>
-
-<p>-t
--t
--t</p>
-
-<ol>
-<li>t</li>
-<li>t</li>
-<li>t</li>
-</ol>
-
-
-<p>knadfiafindf
-inadfadinf <a href="http://google.com">url</a>.</p>
-]]></content>
-  </entry>
   
 </feed>
