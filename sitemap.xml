@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://lcfg.github.com/blog/2013/02/26/test/</loc>
+        <lastmod>2013-02-26T00:43:29+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://lcfg.github.com/blog/archives/</loc>
-        <lastmod>2013-02-25T23:42:52+01:00</lastmod>
+        <lastmod>2013-02-26T00:43:29+01:00</lastmod>
     </url>
     <url>
         <loc>http://lcfg.github.com/</loc>
-        <lastmod>2013-02-25T23:42:52+01:00</lastmod>
+        <lastmod>2013-02-26T00:43:29+01:00</lastmod>
     </url>
     <url>
         <loc>http://lcfg.github.com/robots.txt</loc>
