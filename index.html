@@ -2,25 +2,17 @@
 layout: default
 title: On your desk
 ---
-
+<h1>On your desk</h1>
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
   <div class="post">
-    <h1>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   </div>
   {% endfor %}
 </div>
 
 <!-- Pagination links -->
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.next_page %}
     <a href="/page{{paginator.next_page}}" class="older">Older</a>
   {% else %}
@@ -35,4 +27,4 @@ title: On your desk
   {% else %}
     <span class="previous">Newer</span>
   {% endif %}
-</div>
+</div> -->

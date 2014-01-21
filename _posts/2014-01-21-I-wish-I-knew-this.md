@@ -8,8 +8,6 @@ tags: windows, jekyll, ruby, tips
 
 A tiny selection of tips for those who are foolish enough to want to use jekyll on windows.
 
-## I wish I knew this
-
 + Downgrade jekyll from 1.4.3 to 1.4.2 (`gem install jekyll --version "=1.4.2"`, then gem uninstall 1.4.3).
 + Also downgrade pygments from 0.5.x to 0.5.0.
 + **Use Ruby 1.9.3**.
