@@ -11,7 +11,7 @@ A tiny selection of tips for those who are determined enough to want to use jeky
 
 + Downgrade jekyll from 1.4.3 to 1.4.2 (`gem install jekyll --version "=1.4.2"`, then gem uninstall 1.4.3).
 + Also downgrade pygments from 0.5.x to 0.5.0.
-+ **Use Ruby 1.9.3**.
++ Use Ruby **1.9.3**.
 + Add a python installation to your PATH.
 + Use [RailsInstaller](http://railsinstaller.org "RailsInstaller by EngineYard") to install Ruby.
 + use `gem uninstall .. --ignore-dependencies` to move past "[..] one or more dependencies will not be met."	
