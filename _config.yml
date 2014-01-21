@@ -19,3 +19,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   use_coderay: false
 
+author:
+  name:       Laurens Greven
+  email:      laurens.greven@hva.nl
