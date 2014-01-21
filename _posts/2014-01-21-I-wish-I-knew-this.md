@@ -23,5 +23,3 @@ A tiny selection of tips for those who are determined enough to want to use jeky
 
 1. ["Using Jekyll with Pages by Github"](https://help.github.com/articles/using-jekyll-with-pages) - jekyll help by Github. Especially applicable if you're publishing your site on there.
 2. ["Installing Jekyll on Windows by Chris Meserole"](http://chrismeserole.com/coding/install-ruby-rails-jekyll-on-windows/) -  blog post that sets apart two ways to install jekyll on windows.
-
-
