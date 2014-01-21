@@ -7,7 +7,7 @@ tags: windows jekyll ruby tips
 comments: true
 ---
 
-A tiny selection of tips for those who are foolish enough to want to use jekyll on windows.
+A tiny selection of tips for those who are determined enough to want to use jekyll on windows.
 
 + Downgrade jekyll from 1.4.3 to 1.4.2 (`gem install jekyll --version "=1.4.2"`, then gem uninstall 1.4.3).
 + Also downgrade pygments from 0.5.x to 0.5.0.
@@ -18,7 +18,7 @@ A tiny selection of tips for those who are foolish enough to want to use jekyll 
 + keep a windows shell open with `taskkill /IM ruby.exe /F` (actually terminates ruby.exe).
     + Press the up key in cmd.exe to grab the previously executed command.
 
-### Useful links
+### References
 
 
 1. ["Using Jekyll with Pages by Github"](https://help.github.com/articles/using-jekyll-with-pages) - jekyll help by Github. Especially applicable if you're publishing your site on there.
