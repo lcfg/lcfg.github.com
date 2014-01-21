@@ -6,7 +6,7 @@ title: On your desk
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
-     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - (tagged with: {{ post.tags | array_to_sentence_string }})</li>
   </div>
   {% endfor %}
 </div>
