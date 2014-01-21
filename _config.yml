@@ -1,0 +1,21 @@
+name: On your desk
+
+markdown: kramdown
+show_drafts: false
+pygments: true
+safe: true
+lsi: false
+timezone: Europe/Amsterdam
+encoding: UTF-8
+keep_files:  ['.git','.svn']
+future: true
+markdown_ext:  markdown,mkd,mkdn,md,
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+
