@@ -4,6 +4,7 @@ title:	"I wish I knew this"
 date:	2014-01-21 6:43
 categories: windows jekyll
 tags: windows jekyll ruby tips
+comments: true
 ---
 
 A tiny selection of tips for those who are foolish enough to want to use jekyll on windows.

@@ -1,6 +1,6 @@
 name: On your desk
-tagline: On your desk
-description: On your desk is written by Laurens.
+tagline: On your desk written by Laurens Greven.
+description: Opinions, tech, examination and popular culture.
 
 markdown: kramdown
 show_drafts: false
