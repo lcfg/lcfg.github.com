@@ -11,6 +11,14 @@ title: On your desk
   {% endfor %}
 </div>
 
+<div class="posts">
+  {% for link in site.links %}
+  <div class="post">
+     <li><span>{{ link.date | date_to_string }}</span> &raquo; <a href="{{ link.url }}">{{ link.title }}</a> - (tagged with: {{ link.tags | array_to_sentence_string }})</li>
+  </div>
+  {% endfor %}
+</div>
+
 <!-- Pagination links -->
 <!-- <div class="pagination">
   {% if paginator.next_page %}
