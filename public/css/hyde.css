@@ -504,3 +504,7 @@ a:focus {
   right: 5px;
   bottom: 0px;
 }
+
+div.link {
+	color: red;
+	}

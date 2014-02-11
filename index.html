@@ -5,17 +5,16 @@ title: On your desk
 <h1>On your desk</h1>
 <div class="posts">
   {% for post in site.posts %}
-  <div class="post">
-     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - (tagged with: {{ post.tags | array_to_sentence_string }})</li>
-  </div>
-  {% endfor %}
-</div>
-
-<div class="posts">
-  {% for link in site.links %}
-  <div class="post">
-     <li><span>{{ link.date | date_to_string }}</span> &raquo; <a href="{{ link.url }}">{{ link.title }}</a> - (tagged with: {{ link.tags | array_to_sentence_string }})</li>
-  </div>
+  {% case post.layout %}
+  	{% when 'post' %}
+	  <div class="post">
+	    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - (tagged with: {{ post.tags | array_to_sentence_string }})</li>
+  	  </div>
+	{% when 'link' %}
+	  <div class="link">
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - (tagged with: {{ post.tags | array_to_sentence_string }})</li>
+	  </div>
+  {% endcase %}
   {% endfor %}
 </div>
 
