@@ -1,12 +1,15 @@
-name: On your desk
-tagline: opinions, tech, examination and popular culture on your desk
+title: On your desk
+tagline: opinions, tech, examination and popular culture
 description: Opinions, tech, examination and popular culture.
 
 markdown: kramdown
 show_drafts: false
-pygments: true
+url: http://blog.lcfg.me
+permalink: /:year/:month/:day/:title.htm
+
 safe: true
 lsi: false
+highlighter: kramdown
 timezone: Europe/Amsterdam
 encoding: UTF-8
 keep_files:  ['.git','.svn']
@@ -21,6 +24,25 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   use_coderay: false
 
-author:
+owner:
   name:       Laurens Greven
   email:      laurens.greven@hva.nl
+  twitter:      lcf_g
+  github:       lcfg
+
+
+
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: vim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/username.github.com/

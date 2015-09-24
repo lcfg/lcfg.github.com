@@ -1,37 +1,39 @@
 ---
 layout: default
-title: On your desk
 ---
-<h1>On your desk</h1>
 <div class="posts">
-  {% for post in site.posts %}
-  {% case post.layout %}
-  	{% when 'post' %}
-	  <div class="post">
-	    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - (tagged with: {{ post.tags | array_to_sentence_string }})</li>
-  	  </div>
-	{% when 'link' %}
-	  <div class="link">
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - (tagged with: {{ post.tags | array_to_sentence_string }})</li>
-	  </div>
-  {% endcase %}
-  {% endfor %}
+  <div class="content full-bleed" id="recent-posts">
+  {% for post in site.posts limit:25 %}<a
+    href="{{site.url}}{{post.url}}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
+      <div class="padded-content">
+        <div class="title">{{ post.title }}</div>
+      {% if post.photo_url %}
+        <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
+      {% else %}
+        <!-- <div class="title">{{ post.title }}</div> -->
+        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+          {{ post.date | date: "%b %Y" }}
+        </info>
+		{% if post.twitter %}
+			{{post.twitter}}
+		{% else %}
+		
+		{% if post.header %}
+		<span class="body"><img src="{{post.header}}"></span>
+		{% endif %}
+        {% if post.description %}
+        <span class="body">{{ post.description | strip_html }}</span>
+        {% else %}
+        <span class="body">{{ post.excerpt | strip_html }}</span>
+        {% endif %}
+		{% endif %}
+      {% endif %}<!-- post.photo_url -->
+      </div>
+    </a>{% endfor %}
+    <div class="breaker"></div>
+    <div class="end">
+      <a href="{{site.url}}archive/">More...</a>
+    </div>
+  </div>
 </div>
-
-<!-- Pagination links -->
-<!-- <div class="pagination">
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="older">Older</a>
-  {% else %}
-    <span class="next">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="/" class="newer">Newer</a>
-    {% else %}
-      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="previous">Newer</span>
-  {% endif %}
-</div> -->
+{% include pagescript.html %}
