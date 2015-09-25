@@ -9,24 +9,24 @@ permalink: /:year/:month/:day/:title.htm
 
 safe: true
 lsi: false
-highlighter: kramdown
+highlighter: pygments
 timezone: Europe/Amsterdam
 encoding: UTF-8
 keep_files:  ['.git','.svn']
 future: true
 markdown_ext:  markdown,mkd,mkdn,md,
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
+#kramdown:
+#  auto_ids: true
+#  footnote_nr: 1
+#  entity_output: as_char
+#  toc_levels: 1..6
+#  smart_quotes: lsquo,rsquo,ldquo,rdquo
+#  use_coderay: false
 
 owner:
   name:       Laurens Greven
-  email:      laurens.greven@hva.nl
+  email:      contact@lcfg.me
   twitter:      lcf_g
   github:       lcfg
 
