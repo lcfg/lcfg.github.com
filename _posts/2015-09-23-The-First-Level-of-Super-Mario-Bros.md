@@ -23,4 +23,4 @@ Unlike most papers (I've read), Tom's is thorougly lucid, irreversibly deepened 
 
 &nbsp;
 
-Alongside the paper Tom took the time to record <a href="https://www.youtube.com/playlist?list=PLQ-I7v-e2txK_Y_zU6q6TUr6-P5eWzXUd">three videos</b> that serve as a showcase of his work. If you have an hour to spare and are interested in watching a computer program play Bubble Bobble, Tetris and figure out glitches in Super Mario Bros., be sure to [check out these videos](http://www.cs.cmu.edu/~tom7/mario/).
+Alongside the paper Tom took the time to record [three videos](https://www.youtube.com/playlist?list=PLQ-I7v-e2txK_Y_zU6q6TUr6-P5eWzXUd) that serve as a showcase of his work. If you have an hour to spare and are interested in watching a computer program play Bubble Bobble, Tetris and figure out glitches in Super Mario Bros., be sure to [check out these videos](http://www.cs.cmu.edu/~tom7/mario/).
